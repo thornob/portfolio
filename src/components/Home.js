@@ -12,7 +12,7 @@ return (
             </div>
             <div className="des">
                 {/* 30 */}
-                Hi, I’m Tahsin Ornob — a Physics undergrad at SUST and an aspiring entrepreneur. I build creative, functional web experiences with React, TypeScript, HTML & CSS, and code in Python and C. I’m also into AI, design & photography. 🚀 </div>
+                Hi, I’m Tahsin Ornob — a Physics student at SUST and an aspiring entrepreneur. I build creative, functional web experiences with React, TypeScript, HTML & CSS, and code in Python and C. I’m also into AI, design & photography. 🚀 </div>
             
             <a href="Nure_Tahsin_Mia_CV.pdf" target="_blank" rel="noopener noreferrer" className='animation active '>
                 Download My CV
