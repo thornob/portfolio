@@ -171,10 +171,16 @@ section.home{
 }
 /* ===== Skills Section ===== */
 section.skills {
-    padding: 50px 20px;
-    position: relative;
+    margin-top: 10px;
+    padding: 5px;
+    position: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     & .title {
+        margin-top: 10px;
         text-align: center;
         font-size: 5vw;
         font-family: 'MuseoModerno', system-ui;
@@ -245,7 +251,8 @@ section.skills {
 
 
     & .list {
-        flex-wrap: wrap;
+        margin: 0 auto;
+        /* flex-wrap: wrap;
         align-items: flex-start;
         gap: 1.5rem;
 
@@ -254,7 +261,7 @@ section.skills {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         justify-content: space-between;
         
-        position: relative;
+        position: relative; */
 
         &::before {
             position: absolute;
@@ -271,6 +278,14 @@ section.skills {
             z-index: -1;
         }
 
+        & .new-list {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
         & .item {
             backdrop-filter: blur(50px);
             padding: 20px;
@@ -279,7 +294,7 @@ section.skills {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            
+            width: 300px;
 
             & svg {
                 font-size: 30px;
@@ -304,6 +319,7 @@ section.skills {
         }
     }
 }
+
 section.projects {
     & .title {
         margin-top: 100px;
@@ -320,8 +336,7 @@ section.projects {
     & .list {
         margin-top: 50px;
         & .item {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 100px;
@@ -352,15 +367,7 @@ section.projects {
             }
         }
         & .item:nth-child(2n) {
-            & .images {
-                grid-column-start: 2;
-                grid-column-end: 3;
-            }
-            & .content {
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 1;
-            }
+            flex-direction: row-reverse;
         }
     }
 }
@@ -374,7 +381,8 @@ section.projects {
 
 .img-two img {
     height: 300px;
-    width: 450px;
+    /* width: 450px; */
+    /* width: 100%; */
     border-radius: 10px;
     box-shadow: 0 20px 40px rgba(55, 65, 130, 0.7);
 }

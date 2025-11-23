@@ -54,24 +54,27 @@ function Skills() {
       <div className="list">
         {/* TECHNICAL SKILLS Heading */}
         <h2 className="technical-skills">TECHNICAL SKILLS</h2>
-        {listSkills.slice(0, 5).map((value, key) => (
-          <div className="item" key={key} ref={(el) => el && divs.current.push(el)}>
-            {value.icon && <FontAwesomeIcon icon={value.icon} />}
-            <h3>{value.name}</h3>
-            <div className="des">{value.des}</div>
-          </div>
-        ))}
+        <div className='new-list'>
+          {listSkills.slice(0, 5).map((value, key) => (
+            <div className="item" key={key} ref={(el) => el && divs.current.push(el)}>
+              {value.icon && <FontAwesomeIcon icon={value.icon} />}
+              <h3>{value.name}</h3>
+              <div className="des">{value.des}</div>
+            </div>
+          ))}
+        </div>
 
         {/* SOFT SKILLS Heading */}
         <h2 className="soft-skills">SOFT SKILLS</h2>
-        <div className="soft-skills-list"></div>
-        {listSkills.slice(5).map((value, key) => (
-          <div className="item" key={key} ref={(el) => el && divs.current.push(el)}>
-            {value.icon && <FontAwesomeIcon icon={value.icon} />}
-            {value.name && <h3>{value.name}</h3>}
-            <div className="des">{value.des}</div>
+          <div className='new-list'>
+             {listSkills.slice(5).map((value, key) => (
+                <div className="item" key={key} ref={(el) => el && divs.current.push(el)}>
+                  {value.icon && <FontAwesomeIcon icon={value.icon} />}
+                  {value.name && <h3>{value.name}</h3>}
+                  <div className="des">{value.des}</div>
+                </div>
+              ))}
           </div>
-        ))}
       </div>
     </section>
   );
