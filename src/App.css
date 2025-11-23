@@ -266,8 +266,8 @@ section.skills {
         &::before {
             position: absolute;
             content: '';
-            width: 150%;
-            height: 103%;
+            width: 100%;
+            height: 100%;
       
             top: 50%;
             left: 50%;
@@ -338,6 +338,7 @@ section.projects {
         & .item {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             align-items: center;
             margin-bottom: 100px;
             gap: 20px;
@@ -373,38 +374,10 @@ section.projects {
 }
 
 /* Custom styles for each image */
-.img-one img {
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: 0 20px 40px #bec3d4;
-}
-
-.img-two img {
-    height: 300px;
-    /* width: 450px; */
-    /* width: 100%; */
-    border-radius: 10px;
-    box-shadow: 0 20px 40px rgba(55, 65, 130, 0.7);
-}
-
-.img-three img {
-    
-    width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 20px 40px rgba(55, 154, 75, 0.5);
-}
-.img-calculator img {
-    height: 550px;
-    width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 20px 40px rgba(255, 99, 71, 0.5);
-}
-
-.img-weather img {
-    height: 500px;
-    width: 450px;
-    border-radius: 10px;
-    box-shadow: 0 20px 40px rgba(30, 144, 255, 0.5);
+img {
+    width: 100%;
+    max-width: 500px;
+    max-height: 600px;
 }
 
 
@@ -682,6 +655,14 @@ section.education .title {
    ========================= */
 
 @media (max-width: 900px) {
+.new-list {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0;
+}
+
   .contact-container {
     flex-direction: column;
   }
