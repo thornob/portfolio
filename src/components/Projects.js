@@ -1,11 +1,27 @@
 import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPersonCircleQuestion,
-  faEarthAmericas,
-} from "@fortawesome/free-solid-svg-icons";
+import {faPersonCircleQuestion,faEarthAmericas,} from "@fortawesome/free-solid-svg-icons";
 import CustomHook from "./CustomHook";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
+const getLanguageIcon = (lang) => {
+  const l = lang.trim().toLowerCase();
+    const iconMap = {
+    "html": "/html.png",
+    "css": "/css.png",
+    "javascript": "/js.png",
+    "python": "/python.png",
+    "react": "/react.png",
+    "typescript": "/typescript.png",
+    "weatherapi": "/weatherapi.png",
+  };
+  console.log("Looking for icon:",l,iconMap[l]);
+  return (<img src={iconMap[l]} alt={lang} style={{width:"24px",height:"24px",objectFit:"contain"}}
+    />
+
+  );
+
+  }
 
 function Projects() {
   const [listProjects] = useState([
@@ -33,7 +49,7 @@ function Projects() {
       des: "Developed a tool that analyzes WhatsApp chat data to extract insights such as message frequency, user activity, and word usage patterns using data visualization and text analysis.",
       mission:
         "To simplify chat data interpretation through automation and visualization, helping users understand communication behavior and engagement trends.",
-      language: "Python (Pandas, Matplotlib, Seaborn, re)",
+      language: "Python",
       images: "WhatsApp Chat Analyzer.png",
       imgClass: "img-two",
     },
@@ -53,7 +69,7 @@ function Projects() {
       des: "Built a Python-based tool that validates phone numbers, detects their location, and identifies carrier information across multiple countries.",
       mission:
         "To build a reliable tool for identifying and verifying phone numbers efficiently while ensuring accuracy and privacy.",
-      language: "Python (phonenumbers, geopy, folium)",
+      language: "Python",
       images: "Track Phone Number Location.png",
       imgClass: "img-three",
     },
@@ -111,9 +127,17 @@ function Projects() {
                 <div>
                   <FontAwesomeIcon icon={faEarthAmericas} />
                 </div>
-                <div>
+                <div className="icon">
                   <h4>Languages</h4>
-                  <div className="des">{project.language}</div>
+                <div className="tech-badge-container">   
+                  
+                    {project.language.split(", ").map((lang, index) => (
+                      <div key={index} className="tech-badge">
+                        {getLanguageIcon(lang)}
+                      </div>
+                    ))}
+                  
+                </div>
                 </div>
               </div>
             </div>

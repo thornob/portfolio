@@ -352,6 +352,26 @@ section.projects {
                     text-align: left;
                     width: 100%;
                 }
+                .tech-badge-container{
+                    display: flex;
+                    gap: 10px;
+                    
+                }
+                & .tech-badge{
+                    background: #111;
+                    padding: 3px;
+                    border-radius: 8px;
+                    
+                    display:inline-flex;
+                    flex-direction: row;
+                    align-items: center;
+                    
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    
+                }
                 & .mission {
                     display: grid;
                     grid-template-columns: 70px 1fr;
