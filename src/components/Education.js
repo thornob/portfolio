@@ -14,8 +14,8 @@ const educationData = [
   },
   {
     degree: "Higher Secondary Certificate (HSC)",
-    institution: "Kakairtala Janata College , Chandpur",
-    location: "Sylhet, Bangladesh",
+    institution: "Kakairtala Janata College",
+    location: "Chandpur, Bangladesh",
     duration: "2020 – 2022",
     details: [
       "Completed science stream with distinction.",
@@ -24,7 +24,7 @@ const educationData = [
   },
   {
     degree: "Secondary School Certificate (SSC)",
-    institution: "Jagannathpur Hazi Ershad Miah High School, Chandpur",
+    institution: "Jagannathpur Hazi Ershad Miah High School",
     location: "Chandpur, Bangladesh",
     duration: "2018 – 2020",
     details: [
