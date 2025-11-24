@@ -38,7 +38,7 @@ function Skills() {
     {
       name: 'Soft Skills',
       des: 'Communication (Verbal & Written), Leadership & Teamwork, Problem Solving & Critical Thinking, Time Management & Adaptability, People Management & Delegation, Public Speaking & Networking, Conflict Resolution, Decision Making',
-      icon: faUser, // soft skills এর জন্য icon optional
+      icon: faUser, 
     },
   ]);
 

@@ -178,7 +178,7 @@ section.skills {
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    
     & .title {
         margin-top: 10px;
         text-align: center;
@@ -237,6 +237,7 @@ section.skills {
      
 
 .technical-skills {
+    
     background: linear-gradient(90deg, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
