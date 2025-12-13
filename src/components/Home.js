@@ -10,13 +10,22 @@ return (
             <div className="name">
                 MY NAME IS <span>NURE TAHSIN MIA</span>
             </div>
-            <div className="des">
-                {/* 30 */}
-                Hi, I’m Tahsin Ornob — a Physics undergrade at SUST and an aspiring entrepreneur. I build creative, functional web experiences with React, TypeScript, HTML & CSS, and code in Python and C. I’m also into AI, design & photography. 🚀 </div>
-            
+            <div className="des">              
+                Hi, I’m Tahsin Ornob — a Physics undergrade at SUST and an aspiring entrepreneur. I build creative, functional web experiences with React, TypeScript, HTML & CSS, and code in Python and C. I’m also into AI, design & photography. 🚀
+            </div>
+
+            <div className='cv-row'>
             <a href="Nure_Tahsin_Mia_CV.pdf" target="_blank" rel="noopener noreferrer" className='animation active '>
                 Download My CV
             </a>
+            <a href="Tahsin's Resume (Frontend Developer).pdf" target="_blank" rel="noopener noreferrer" className='animation active '>
+                Download My Resume
+            </a>
+            <a href="Tahsin's Resume (Corporate).pdf" target="_blank" rel="noopener noreferrer" className='animation active '>
+                Download My Resume
+            </a>
+            </div>
+
         </div>
         <div className="avatar">
             <div className="card">

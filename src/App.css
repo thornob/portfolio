@@ -122,6 +122,12 @@ section.home{
             border-left: .7em solid #e945e3;
             padding-left: 2em;
         }
+        & .cv-row{
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            flex-wrap: nowrap;
+        }
         & a{
             display: block;
             font-size: large;
