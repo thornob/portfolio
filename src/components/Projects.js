@@ -38,7 +38,7 @@ function Projects() {
     },
 
     {
-      name: "Kaizen SUST Portal",
+      name: "SkyView Weather App",
       des: "Developed a modern weather application with real-time climate data, dynamic UI updates, and a clean Windows-style interface featuring temperature, wind, humidity, pressure, and air-quality insights.",
       mission:
         "To build intuitive and visually appealing interfaces that simplify complex data, enhance user experience, and make everyday information accessible and delightful.",
