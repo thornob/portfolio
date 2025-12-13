@@ -1,31 +1,51 @@
 import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faPersonCircleQuestion,faEarthAmericas,} from "@fortawesome/free-solid-svg-icons";
+import { faPersonCircleQuestion, faEarthAmericas, } from "@fortawesome/free-solid-svg-icons";
 import CustomHook from "./CustomHook";
 import { icon } from "@fortawesome/fontawesome-svg-core";
 
 const getLanguageIcon = (lang) => {
   const l = lang.trim().toLowerCase();
-    const iconMap = {
+  const iconMap = {
     "html": "/html.png",
     "css": "/css.png",
+    "tailwind css": "/Tailwind CSS.webp",
     "javascript": "/js.png",
     "python": "/python.png",
     "react": "/react.png",
     "typescript": "/typescript.png",
     "weatherapi": "/weatherapi.png",
   };
-  console.log("Looking for icon:",l,iconMap[l]);
-  return (<img src={iconMap[l]} alt={lang} style={{width:"24px",height:"24px",objectFit:"contain"}}
-    />
+  console.log("Looking for icon:", l, iconMap[l]);
+  return (<img src={iconMap[l]} alt={lang} style={{ width: "24px", height: "24px", objectFit: "contain" }}
+  />
 
   );
 
-  }
+}
 
 function Projects() {
   const [listProjects] = useState([
-    
+
+    {
+      name: "Kaizen SUST Portal",
+      des: "Designed and developed a comprehensive web portal for Kaizen SUST to manage organizational activities, showcase events, weekly tasks, team members, and publications with a modern, responsive, and user-friendly interface.",
+      mission:
+        "To create a centralized digital platform that strengthens communication, improves accessibility to information, and supports the growth and professionalism of the Kaizen SUST community.",
+      language: "React, TypeScript, Tailwind CSS",
+      images: "kaizen-portal.png",
+      imgClass: "img-kaizen",
+    },
+
+    {
+      name: "Kaizen SUST Portal",
+      des: "Developed a modern weather application with real-time climate data, dynamic UI updates, and a clean Windows-style interface featuring temperature, wind, humidity, pressure, and air-quality insights.",
+      mission:
+        "To build intuitive and visually appealing interfaces that simplify complex data, enhance user experience, and make everyday information accessible and delightful.",
+      language: "HTML, CSS, JavaScript, WeatherAPI",
+      images: "weather-app.png",
+      imgClass: "img-weather",
+    },
     {
       name: "Neon Gradient Calculator",
       des: "Created an interactive calculator featuring a modern neon-glass UI, gradient buttons, real-time expression handling, and smooth responsive interactions for basic arithmetic operations.",
@@ -36,15 +56,6 @@ function Projects() {
       imgClass: "img-calculator",
     },
     {
-      name: "SkyView Weather App",
-      des: "Developed a modern weather application with real-time climate data, dynamic UI updates, and a clean Windows-style interface featuring temperature, wind, humidity, pressure, and air-quality insights.",
-      mission:
-        "To build intuitive and visually appealing interfaces that simplify complex data, enhance user experience, and make everyday information accessible and delightful.",
-      language: "HTML, CSS, JavaScript, WeatherAPI",
-      images: "weather-app.png",
-      imgClass: "img-weather",
-    },
-    {
       name: "WhatsApp Chat Analyzer",
       des: "Developed a tool that analyzes WhatsApp chat data to extract insights such as message frequency, user activity, and word usage patterns using data visualization and text analysis.",
       mission:
@@ -53,7 +64,7 @@ function Projects() {
       images: "WhatsApp Chat Analyzer.png",
       imgClass: "img-two",
     },
-    
+
     {
       name: "Tic-Tac-Toe",
       des: "Built an interactive Tic-Tac-Toe game featuring responsive design, turn-based logic, and automatic win detection.",
@@ -129,15 +140,15 @@ function Projects() {
                 </div>
                 <div className="icon">
                   <h4>Languages</h4>
-                <div className="tech-badge-container">   
-                  
+                  <div className="tech-badge-container">
+
                     {project.language.split(", ").map((lang, index) => (
                       <div key={index} className="tech-badge">
                         {getLanguageIcon(lang)}
                       </div>
                     ))}
-                  
-                </div>
+
+                  </div>
                 </div>
               </div>
             </div>
