@@ -15,7 +15,7 @@ return (
             </div>
 
             <div className='cv-row'>
-            <a href="Nure_Tahsin_Mia_CV.pdf" target="_blank" rel="noopener noreferrer" className='animation active '>
+            <a href="Tahsin's CV.pdf" target="_blank" rel="noopener noreferrer" className='animation active '>
                 Download My CV
             </a>
             <a href="Tahsin's Resume (Frontend Developer).pdf" target="_blank" rel="noopener noreferrer" className='animation active '>
