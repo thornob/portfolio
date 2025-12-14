@@ -1,3 +1,4 @@
+
 /* =========================
    CONTACT SECTION LAYOUT
    ========================= */
@@ -167,4 +168,25 @@
   .left-box {
     width: 100%;
   }
+}
+
+
+/* animation */
+.animation{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.animation.active{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
 }

@@ -7,30 +7,42 @@ section.skills {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+    
+    & .title {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'MuseoModerno', system-ui;
+        font-weight: bold;
+    }
 
-section.skills .title {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 5vw;
-    font-family: 'MuseoModerno', system-ui;
-    font-weight: bold;
-}
-
-section.skills .des {
-    color: rgba(238, 238, 238, 0.33);
-    text-align: center;
-    max-width: 500px;
-    margin: auto;
-    font-size: 1rem;
-}
-
-section.skills .list h2.technical-skills {
+    & .des {
+        color: rgba(238, 238, 238, 0.33);
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+        font-size: 1rem;
+    }
+    
+    .list h2.technical-skills {
     display: inline-block;
     vertical-align: top;
     margin-right: 20px;
-    text-align: left;
-    padding-left: 10px;
+    text-align: left;       /* Align titles to the left */
+    padding-left: 10px;     /* Optional: add some left spacing */
+    word-break: break-word;
+    white-space: normal;
+    overflow: visible;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    .list h2.soft-skills {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    text-align: left;       
+    padding-left: 10px;     
     word-break: break-word;
     white-space: normal;
     overflow: visible;
@@ -39,93 +51,101 @@ section.skills .list h2.technical-skills {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-section.skills .list h2.soft-skills {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-    text-align: left;
-    padding-left: 10px;
-    word-break: break-word;
-    white-space: normal;
-    overflow: visible;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
-section.skills .soft-skills-list {
+
+
+.soft-skills-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;           
     gap: 1.5rem;
-    flex: 1;
+    flex: 1;                   
 }
 
-section.skills .technical-skills {
+
+
+     
+
+.technical-skills {
+    
     background: linear-gradient(90deg, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-section.skills .soft-skills {
+.soft-skills {
     background: linear-gradient(80deg, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
 }
 
-section.skills .list {
-    margin: 0 auto;
-}
 
-section.skills .list::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    border-radius: 20px;
-    background-size: 200% auto;
-    z-index: -1;
-}
 
-section.skills .list .new-list {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px 0;
-}
+    & .list {
+        margin: 0 auto;
+        /* flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1.5rem;
 
-section.skills .list .item {
-    backdrop-filter: blur(50px);
-    padding: 20px;
-    border-radius: 20px;
-    background-color: rgba(53, 62, 17, 0.53);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 300px;
-}
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-content: space-between;
+        
+        position: relative; */
 
-section.skills .list .item svg {
-    font-size: 30px;
-    background-color: rgba(238, 238, 238, 0.13);
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
+        &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+      
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            border-radius: 20px;
+            background-size: 200% auto;
+            z-index: -1;
+        }
 
-section.skills .list .item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    color: #fff;
-}
+        & .new-list {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0;
+        }
 
-section.skills .list .item .des {
-    text-align: left;
-    width: 100%;
-    font-size: small;
-    color: rgba(255, 255, 255, 0.9);
+        & .item {
+            backdrop-filter: blur(50px);
+            padding: 20px;
+            border-radius: 20px;
+            background-color: rgba(53, 62, 17, 0.53);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 300px;
+
+            & svg {
+                font-size: 30px;
+                background-color: rgba(238, 238, 238, 0.13);
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 5px;
+                color: #fff;
+            }
+
+            & .des {
+                text-align: left;
+                width: 100%;
+                font-size: small;
+                color: rgba(255, 255, 255, 0.9);
+            }
+        }
+    }
 }

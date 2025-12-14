@@ -1,5 +1,5 @@
 /* navbar */
-header {
+header{
     position: fixed;
     width: 100%;
     max-width: 100%;
@@ -14,31 +14,23 @@ header {
     box-sizing: border-box;
     z-index: 100;
     backdrop-filter: blur(10px);
-}
-
-header img {
-    width: 50px;
-}
-
-header .logo,
-header nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-header .logo span,
-header nav span {
-    cursor: pointer;
-}
-
-header .logo .active,
-header nav .active {
-    color: #e945e3;
-    text-shadow: 0 0 5px #7A43B6;
-}
-
-header .icon-bar {
-    width: 30px;
-    display: none;
+    & img{
+        width: 50px;
+    }
+    & .logo, nav{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        & span{
+            cursor: pointer;
+        }
+        & .active{
+            color: #e945e3;
+            text-shadow: 0 0 5px #7A43B6;
+        }
+    }
+    & .icon-bar{
+        width: 30px;
+        display: none;
+    }
 }
