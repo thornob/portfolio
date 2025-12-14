@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeTabActive } from '../redux/action';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
+import './Navbar.css'
 const Navbar = ({ refs }) => {
   const dispatch = useDispatch();
   const activeTab = useSelector((state) => state.activeTab);

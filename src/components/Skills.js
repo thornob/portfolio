@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faPalette, faChartColumn, faPersonChalkboard, faCamera, faUser } from '@fortawesome/free-solid-svg-icons';
-
+import './Skills.css'
 import CustomHook from './CustomHook';
 
 function Skills() {

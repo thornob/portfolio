@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import CustomHook from "./CustomHook"; // same hook used in Experiences.jsx
-
+import './Education.css';
 const educationData = [
   {
     degree: "Bachelor of Science in Physics",

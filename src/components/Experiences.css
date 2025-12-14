@@ -1,0 +1,60 @@
+
+section.experiences {
+  padding: 50px 20px;
+  
+  color: #eee;
+  font-family: 'MuseoModerno', sans-serif;
+}
+
+section.experiences .title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #ffcc00;
+}
+
+section.experiences .experience-card {
+  background: rgba(76, 78, 56, 0.608);
+  border-left: 4px solid #ffcc00;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+section.experiences .experience-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+section.experiences .role {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+section.experiences .company {
+  font-size: 1.1rem;
+  margin-top: 5px;
+  color: #ccc;
+}
+
+section.experiences .location {
+  font-style: italic;
+}
+
+section.experiences .date {
+  font-size: 0.9rem;
+  margin-top: 3px;
+  color: #aaa;
+}
+
+section.experiences .responsibilities {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+section.experiences .responsibilities li {
+  margin-bottom: 8px;
+}

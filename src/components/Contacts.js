@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import CustomHook from './CustomHook';
 import emailjs from "emailjs-com";
+import './Contacts.css';
 
 function Contacts() {
 

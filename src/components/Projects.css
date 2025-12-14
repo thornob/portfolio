@@ -1,0 +1,80 @@
+section.projects .title {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'MuseoModerno', system-ui;
+}
+
+section.projects .des {
+    color: #eee5;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+section.projects .list {
+    margin-top: 50px;
+}
+
+section.projects .list .item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 20px;
+}
+
+section.projects .list .item .content h3 {
+    font-size: 3em;
+    margin: 0;
+}
+
+section.projects .list .item .content .des {
+    text-align: left;
+    width: 100%;
+}
+
+section.projects .list .item .content .tech-badge-container {
+    display: flex;
+    gap: 10px;
+}
+
+section.projects .list .item .content .tech-badge {
+    background: #111;
+    padding: 3px;
+    border-radius: 8px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+section.projects .list .item .content .mission {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+section.projects .list .item .content .mission div:nth-child(1) svg {
+    background-color: #eee3;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+section.projects .list .item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+/* Custom styles for each image */
+img {
+    width: 100%;
+    max-width: 500px;
+    max-height: 600px;
+}

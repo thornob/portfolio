@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPersonCircleQuestion, faEarthAmericas, } from "@fortawesome/free-solid-svg-icons";
 import CustomHook from "./CustomHook";
 import { icon } from "@fortawesome/fontawesome-svg-core";
+import './Projects.css';
 
 const getLanguageIcon = (lang) => {
   const l = lang.trim().toLowerCase();

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import CustomHook from "./CustomHook";
-
+import './Experiences.css'
 const experiences = [
     {
         title: "Publication & Graphic Design Secretary",

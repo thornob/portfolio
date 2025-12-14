@@ -1,5 +1,6 @@
 import React, { useRef } from 'react' 
 import CustomHook from './CustomHook';
+import './Home.css'
 function Home() {
 const scrollTab = useRef();
 CustomHook(scrollTab);
