@@ -43,7 +43,8 @@
   padding: 30px;
   border-radius: 18px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 25px  rgba(0, 255, 255, 0.1);
+  padding-right: 60px;
 }
 
 .left-box h3 {
@@ -51,12 +52,15 @@
   font-size: 1.6rem;
   margin-bottom: 20px;
   color: #00eaff;
+  
 }
 
 .left-box form {
+  
   display: flex;
   flex-direction: column;
   gap: 18px;
+  
 }
 
 .left-box input,
@@ -75,7 +79,7 @@
 .left-box input:focus,
 .left-box textarea:focus {
   border-color: #00ffff;
-  box-shadow: 0 0 10px #00ffff;
+  box-shadow: 0 0 10px  #00ffff;
 }
 
 .left-box textarea {
