@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faPalette, faChartColumn, faPersonChalkboard, faCamera, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode,faGraduationCap, faFlask, faUsers, faComments, faClock, faBookOpen, faChartLine, faTools, faCalendarCheck, faPalette, faChartColumn, faPersonChalkboard, faCamera, faUser } from '@fortawesome/free-solid-svg-icons';
 import './Skills.css'
 import CustomHook from './CustomHook';
 
@@ -11,34 +11,64 @@ function Skills() {
 
   const [listSkills] = useState([
     {
-      name: 'Programming',
-      des: 'HTML , CSS , JavaScript , React , Typescript , Python , C',
+      name: 'Programming & Development',
+      des: 'HTML, CSS, JavaScript, React, TypeScript, Python, C',
       icon: faLaptopCode,
     },
     {
+      name: 'Data Analysis',
+      des: 'SPSS, Microsoft Excel, data cleaning, visualization, and interpretation',
+      icon: faChartLine,
+    },
+    {
       name: 'Graphic Design',
-      des: 'Adobe Illustrator (Primary); Canva (Advanced)',
+      des: 'Canva (Advanced), Adobe Photoshop (Basic), visual storytelling, brand consistency',
       icon: faPalette,
     },
     {
-      name: 'Data Analysis',
-      des: 'SPSS, MS Excel (Advanced)',
-      icon: faChartColumn,
+      name: 'Digital Tools & Office Management',
+      des: 'Google Workspace, Microsoft Office, Zoom, Google Meet, documentation and collaboration',
+      icon: faTools,
     },
     {
-      name: 'Documentation & Presentation',
-      des: 'MS Word (Advanced Formatting), MS PowerPoint (Professional Design)',
-      icon: faPersonChalkboard,
+      name: 'Editorial & Publication Work',
+      des: 'Editing and reviewing magazine content, publication coordination',
+      icon: faBookOpen,
+    },
+    {
+      name: 'Scientific Writing & Research',
+      des: 'Scientific article writing, research analysis, and documentation',
+      icon: faFlask,
+    },
+    {
+      name: 'Event Management',
+      des: 'Event planning, coordination, execution, logistics, and time management',
+      icon: faCalendarCheck,
     },
     {
       name: 'Photography',
-      des: 'Creative photography, image editing, visual storytelling',
+      des: 'Visual storytelling, photo editing, and post-processing',
       icon: faCamera,
     },
     {
-      name: 'Soft Skills',
-      des: 'Communication (Verbal & Written), Leadership & Teamwork, Problem Solving & Critical Thinking, Time Management & Adaptability, People Management & Delegation, Public Speaking & Networking, Conflict Resolution, Decision Making',
-      icon: faUser, 
+      name: 'Communication & Outreach',
+      des: 'Public speaking, presentations, networking, stakeholder engagement',
+      icon: faComments,
+    },
+    {
+      name: 'Leadership & Teamwork',
+      des: 'Team management, motivation, and collaborative execution',
+      icon: faUsers,
+    },
+    {
+      name: 'Time Management & Organization',
+      des: 'Task planning, prioritization, scheduling, and deadline management',
+      icon: faClock,
+    },
+    {
+      name: 'Continuous Learning',
+      des: 'Actively improving skills and staying updated with industry trends',
+      icon: faGraduationCap,
     },
   ]);
 
@@ -55,7 +85,7 @@ function Skills() {
         {/* TECHNICAL SKILLS Heading */}
         <h2 className="technical-skills">TECHNICAL SKILLS</h2>
         <div className='new-list'>
-          {listSkills.slice(0, 5).map((value, key) => (
+          {listSkills.slice(0, 8).map((value, key) => (
             <div className="item" key={key} ref={(el) => el && divs.current.push(el)}>
               {value.icon && <FontAwesomeIcon icon={value.icon} />}
               <h3>{value.name}</h3>
@@ -66,15 +96,15 @@ function Skills() {
 
         {/* SOFT SKILLS Heading */}
         <h2 className="soft-skills">SOFT SKILLS</h2>
-          <div className='new-list'>
-             {listSkills.slice(5).map((value, key) => (
-                <div className="item" key={key} ref={(el) => el && divs.current.push(el)}>
-                  {value.icon && <FontAwesomeIcon icon={value.icon} />}
-                  {value.name && <h3>{value.name}</h3>}
-                  <div className="des">{value.des}</div>
-                </div>
-              ))}
-          </div>
+        <div className='new-list'>
+          {listSkills.slice(8).map((value, key) => (
+            <div className="item" key={key} ref={(el) => el && divs.current.push(el)}>
+              {value.icon && <FontAwesomeIcon icon={value.icon} />}
+              {value.name && <h3>{value.name}</h3>}
+              <div className="des">{value.des}</div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
