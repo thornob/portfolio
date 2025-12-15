@@ -48,20 +48,20 @@ section.home{
         & .cv-row{
             display: flex;
             flex-direction: row;
-            gap: 12px;
+            gap: 10px;
             flex-wrap: nowrap;
         }
         & a{
-            display: block;
-            font-size: large;
+            display: inline-block;
+            font-size: 14px;
             color: #eee;
-            font-weight: bold;
+            font-weight: 600;
             text-decoration: none;
             border: 1px solid #eee;
             background-color:transparent;
             width: max-content;
-            padding: 20px 30px;
-            border-radius: 40px;
+            padding: 8px 16px;
+            border-radius: 20px;
         }
     }
     & .avatar{
