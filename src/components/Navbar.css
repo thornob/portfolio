@@ -31,7 +31,7 @@ header nav {
 
 header nav span {
     cursor: pointer;
-    color: #ffffff; /* readable text on blurred background */
+    color: #fcfafa; /* readable text on blurred background */
 }
 
 header nav span.active {
@@ -55,15 +55,30 @@ header .icon-bar {
         position: fixed;
         top: 0;
         left: -100%;
-        width: 70%;
+        width: 45%;
         height: 100vh;
+
+        background: rgba(0, 0, 0, 0.373); /* transparent for blur */
+        
+        backdrop-filter: blur(10px);          /* blur effect */
+        -webkit-backdrop-filter: blur(10px);  /* Safari support */
+
         flex-direction: column;
         padding: 80px 20px;
         gap: 20px;
         transition: 0.4s;
         z-index: 99;
     }
-
+    /* ===== NAV LINK STYLE ===== */
+    header nav span {
+        cursor: pointer;
+                    /* black text */
+        font-size: 1.1rem;
+        font-weight: 450;
+        width: 100%;
+        padding: 10px 0;
+        transition: background 0.3s;
+    }
     header nav.active {
         left: 0;
     }
