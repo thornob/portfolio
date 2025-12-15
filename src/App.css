@@ -56,67 +56,195 @@ main{
         }
     }
 }
-@media screen and (max-width: 767px) {
-    section{
-        padding: 20px;
-        &.home{
-            grid-template-columns: 1fr;
-            padding-top: 70px;
-            & .content{
-                & a{
-                    margin: auto;
-                    font-size: small;
-                }
-            }
-            & .avatar{
-                grid-row-start: 1;
-            }
-        }
-        &.projects{
-            & .list{
-                & .item{
-                    grid-template-columns: 1fr;
-                    & .content{
-                        & h3{
-                            font-size: 1.2em;
-                            margin-bottom: 1em;
-                        }
-                    }
-                }
-                & .item:nth-child(2n){
-                    & .content, .images{
-                        grid-row-start: auto;
-                        grid-column-start: auto;
-                        grid-column-end: auto;
-                    }
-                }
-            }
-        }
-    }
-    header{
-        & nav{
-            width: 80%;
-            height: 100vh;
-            position: fixed;
-            flex-direction: column;
-            justify-content: start;
-            align-items: start;
-            inset: 0 auto 0 0;
-            background-color: #eee;
-            color: #b0b9f4;
-            padding: 50px;
-            box-sizing: border-box;
-            font-weight: bold;
-            left: -100%;
-            transition: .5s;
-        }
-        & .icon-bar{
-            display: block;
-        }
-        & nav.active{
-            left: 0;
-        } 
-    }
-}
+@media (max-width: 767px) {
 
+  /* ================= GLOBAL ================= */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  section {
+    padding: 20px !important;
+  }
+
+  .title {
+    font-size: 2rem !important;
+  }
+
+  .des {
+    font-size: 0.95rem !important;
+  }
+
+  /* ================= HOME ================= */
+  section.home {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+    padding-top: 90px;
+    text-align: center;
+  }
+
+  section.home .content {
+    text-align: center;
+  }
+
+  section.home .content .name {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  section.home .content .des {
+    border-left: none;
+    padding-left: 0;
+    margin: 20px 0;
+  }
+
+  section.home .cv-row {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  section.home .cv-row a {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  section.home .avatar {
+    grid-row: 1;
+    text-align: center;
+  }
+
+  section.home .avatar .card {
+    width: 100%;
+    max-width: 260px;
+    margin: auto;
+  }
+
+  section.home .avatar img {
+    height: auto;
+    max-height: 300px;
+  }
+
+  section.home .avatar .info {
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  /* ================= NAVBAR ================= */
+  header {
+    height: 60px;
+  }
+
+  header nav {
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    inset: 0 auto 0 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 30px;
+    gap: 20px;
+    left: -100%;
+    transition: 0.4s;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+
+  header .icon-bar {
+    display: block;
+  }
+
+  /* ================= PROJECTS ================= */
+  section.projects .title {
+    font-size: 2.2rem;
+  }
+
+  section.projects .list .item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section.projects .list .item:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  section.projects img {
+    max-width: 100%;
+  }
+
+  .tech-badge-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ================= SKILLS ================= */
+  section.skills .title {
+    font-size: 2.2rem;
+  }
+
+  section.skills .list h2 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  section.skills .new-list {
+    justify-content: center;
+  }
+
+  section.skills .item {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* ================= EXPERIENCE ================= */
+  section.experiences .title {
+    font-size: 2.2rem;
+  }
+
+  section.experiences .experience-card {
+    max-width: 100%;
+    margin: 15px 0;
+    padding: 16px;
+  }
+
+  section.experiences .role {
+    font-size: 1.2rem;
+  }
+
+  /* ================= EDUCATION ================= */
+  section.education .title {
+    font-size: 2.2rem;
+  }
+
+  .education-card {
+    padding: 1.2rem;
+  }
+
+  /* ================= CONTACT ================= */
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .left-box {
+    padding: 20px;
+  }
+
+  .right-box h3 {
+    text-align: center;
+  }
+
+  .social-item {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+}
 
