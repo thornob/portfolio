@@ -30,8 +30,8 @@ function App() {
       <Navbar refs={sectionRefs} />
       <section ref={homeRef}><Home /></section>
       <section ref={experiencesRef}><Experiences /></section>
-      <section ref={projectsRef}><Projects /></section>
       <section ref={skillsRef}><Skills /></section>
+      <section ref={projectsRef}><Projects /></section>
       <section ref={educationRef}><Education /></section>
       <section ref={contactsRef}><Contacts /></section>
     </main>

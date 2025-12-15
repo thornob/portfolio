@@ -8,7 +8,7 @@ const Navbar = ({ refs }) => {
   const dispatch = useDispatch();
   const activeTab = useSelector((state) => state.activeTab);
 
-  const [linkNav] = useState(['Home',  'Experiences', 'Projects', 'Skills', 'Education', 'Contacts']);
+  const [linkNav] = useState(['Home',  'Experiences',  'Skills', 'Projects', 'Education', 'Contacts']);
   const [statusNav, changeStatusNav] = useState(null);
 
   // Toggle mobile nav
