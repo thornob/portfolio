@@ -112,6 +112,7 @@ main{
   }
 
   section.home .avatar {
+    margin-top: 30px;
     grid-row: 1;
     text-align: center;
   }
@@ -134,9 +135,28 @@ main{
   }
 
   /* ================= NAVBAR ================= */
-  header {
-    height: 60px;
-  }
+      header {
+        padding: 0 10px;       /* desktop er cheye kom padding */
+        justify-content: flex-start; /* logo + text left aligned */
+    }
+
+    header .logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;              /* image + text majhe kom gap */
+    }
+
+    header .logo img {
+        width: 40px;              /* choto screen e image size */
+        height: auto;           /* choto screen e image size komano */
+    }
+
+    header .logo span {
+        font-size: 1rem;          /* text size adjust */
+        font-weight: bold;
+        color: #000;       /* text size adjust */
+    }
+
 
   header nav {
     width: 80%;

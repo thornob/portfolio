@@ -1,5 +1,5 @@
-/* navbar */
-header{
+/* ================== GLOBAL HEADER ================== */
+header {
     position: fixed;
     width: 100%;
     max-width: 100%;
@@ -13,24 +13,62 @@ header{
     padding: 0 20px;
     box-sizing: border-box;
     z-index: 100;
-    backdrop-filter: blur(10px);
-    & img{
-        width: 50px;
+    background: rgba(255, 255, 255, 0.1); /* transparent for blur */
+    backdrop-filter: blur(10px); /* blur effect for both desktop & mobile */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+header img {
+    width: 50px;
+}
+
+header .logo,
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav span {
+    cursor: pointer;
+    color: #ffffff; /* readable text on blurred background */
+}
+
+header nav span.active {
+    color: #e945e3;
+    text-shadow: 0 0 5px #7A43B6;
+}
+
+header .icon-bar {
+    width: 30px;
+    display: none; /* hide in desktop */
+}
+
+/* ================== MOBILE ================== */
+@media (max-width: 767px) {
+    header .icon-bar {
+        display: block; /* hamburger visible */
+        cursor: pointer;
     }
-    & .logo, nav{
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        & span{
-            cursor: pointer;
-        }
-        & .active{
-            color: #e945e3;
-            text-shadow: 0 0 5px #7A43B6;
-        }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100vh;
+        flex-direction: column;
+        padding: 80px 20px;
+        gap: 20px;
+        transition: 0.4s;
+        z-index: 99;
     }
-    & .icon-bar{
-        width: 30px;
-        display: none;
+
+    header nav.active {
+        left: 0;
+    }
+
+    header nav span {
+        font-size: 1.2rem;
     }
 }

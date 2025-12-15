@@ -36,6 +36,7 @@ section.home .content .name span {
 }
 
 section.home .content .des {
+    font-size: 1.1em;
     color: rgba(238, 238, 238, 0.603);
     margin: 30px 0;
     border-left: 0.7em solid #e945e3;
