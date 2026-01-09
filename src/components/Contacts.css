@@ -38,6 +38,7 @@
    ========================= */
 
 .left-box {
+  margin-top: 50px;
   flex: 1;
   background: rgba(255, 255, 255, 0.06);
   padding: 30px;
@@ -110,7 +111,7 @@
 
 .right-box {
   flex: 1;
-  padding: 10px;
+  
 }
 
 .right-box h3 {
