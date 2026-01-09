@@ -84,9 +84,9 @@ section.skills {
 
 
     & .list {
+        /*align-items: flex-start;
+        flex-wrap: wrap;
         margin: 0 auto;
-        /* flex-wrap: wrap;
-        align-items: flex-start;
         gap: 1.5rem;
 
         margin-top: 50px;
@@ -112,16 +112,15 @@ section.skills {
         }
 
         & .new-list {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            /* 4 cards per row */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    justify-content: center;
+}
 
 
-            gap: 16px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 10px 0;
-        }
+
+            
 
         & .item {
             backdrop-filter: blur(50px);
@@ -131,7 +130,8 @@ section.skills {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
 
             & svg {
                 font-size: 30px;
