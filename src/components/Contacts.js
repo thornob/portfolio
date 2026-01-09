@@ -6,11 +6,12 @@ import './Contacts.css';
 function Contacts() {
 
   const [listContacts] = useState([
-    { title: 'Phone Number', value: '+8801954260486', link: 'https://wa.me/8801954260486' },
     { title: 'Email', value: 'nuretahsin5@gmail.com', link: 'mailto:nuretahsin5@gmail.com' },
+    { title: 'LinkedIn', value: 'Nure Tahsin Mia', link: 'https://www.linkedin.com/in/nure-tahsin/' },
+    { title: 'Phone Number', value: '+8801954260486', link: 'https://wa.me/8801954260486' },
     { title: 'Instagram', value: '__quietmuse__', link: 'https://www.instagram.com/__quietmuse__/' },
-    { title: 'Facebook', value: 'tahsin.ornob.07', link: 'https://www.facebook.com/tahsin.ornob.07/' },
-    { title: 'Twitter', value: '@TahsinOrno76312', link: 'https://x.com/TahsinOrno76312' }
+    { title: 'Facebook', value: 'Tahsin Ornob', link: 'https://www.facebook.com/tahsin.ornob.07/' },
+    { title: 'Twitter', value: 'Tahsin Ornob', link: 'https://x.com/TahsinOrno76312' }
   ]);
 
   const divs = useRef([]);
