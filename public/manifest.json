@@ -1,9 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tahsin",
+  "name": "Nure Tahsin",
   "icons": [
-   
-  ],
+  {
+    "src": "Tahsin logo.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+    "src": "Tahsin logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+]
+
+,
+  
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
