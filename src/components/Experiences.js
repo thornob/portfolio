@@ -6,7 +6,7 @@ const experiences = [
         title: "Organizing Secretary",
         company: "Kaizen SUST",
         location: "Sylhet, Bangladesh",
-        date: "2025 – Present",
+        date: "2026 – Present",
         responsibilities: [
             "Plan, coordinate and execute organizational events, workshops, and student engagement programs.",
             "Lead event management, team coordination and logistical planning to ensure successful program execution.",
@@ -16,7 +16,7 @@ const experiences = [
         title: "Organizing Secretary",
         company: "Association of Chandpur",
         location: "Sylhet, Bangladesh",
-        date: "2025 – Present",
+        date: "2026 – Present",
         responsibilities: [
             "Coordinate administrative operations, maintain official documentation and manage organizational communications.",
             "Plan and execute events, coordinate team activities and promote student engagement through community initiatives.",
