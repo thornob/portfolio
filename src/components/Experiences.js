@@ -3,23 +3,23 @@ import CustomHook from "./CustomHook";
 import './Experiences.css'
 const experiences = [
     {
-        title: "Publication & Graphic Design Secretary",
+        title: "Organizing Secretary",
         company: "Kaizen SUST",
         location: "Sylhet, Bangladesh",
         date: "2025 – Present",
         responsibilities: [
-            "Lead digital marketing and promotional campaigns for student engagement.",
-            "Design and manage social media content to increase brand awareness.",
+            "Plan, coordinate and execute organizational events, workshops, and student engagement programs.",
+            "Lead event management, team coordination and logistical planning to ensure successful program execution.",
         ],
     },
     {
-        title: "Assistant Office & Publication Secretary",
+        title: "Organizing Secretary",
         company: "Association of Chandpur",
         location: "Sylhet, Bangladesh",
         date: "2025 – Present",
         responsibilities: [
-            "Coordinate official documentation and oversee publication tasks.",
-            "Organize and promote student-focused events.",
+            "Coordinate administrative operations, maintain official documentation and manage organizational communications.",
+            "Plan and execute events, coordinate team activities and promote student engagement through community initiatives.",
         ],
     },
     {
