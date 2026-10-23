@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode,faGraduationCap, faFlask, faUsers, faComments, faClock, faBookOpen, faChartLine, faTools, faCalendarCheck, faPalette, faChartColumn, faPersonChalkboard, faCamera, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode,faGraduationCap, faFlask, faUsers, faComments, faClock, faBookOpen, faChartLine, faTools, faCalendarCheck, faPalette,   faCamera,  } from '@fortawesome/free-solid-svg-icons';
 import './Skills.css'
 import CustomHook from './CustomHook';
 
