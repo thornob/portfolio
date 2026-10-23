@@ -32,16 +32,34 @@ const experiences = [
             "Contributed research and reports on peace and security impacts of climate change.",
         ],
     },
-    // {
-    //     title: "Executive Member",
-    //     company: "International Leadership Competition",
-    //     location: "Sylhet, Bangladesh",
-    //     date: "2025 – Present",
-    //     responsibilities: [
-    //         "Successfully managed university events, increasing student participation.",
-    //         "Promoted learning initiatives through digital and offline media.",
-    //     ],
-    // },
+    {
+        title: "Campus Ambassador",
+        company: "Commonwealth Students' Association (CSA)",
+        location: "Remote",
+        date: "2026 – Present",
+        responsibilities: [
+            "Represent the association on campus and promote its initiatives, programs, and opportunities.",
+            "Coordinate student outreach and encourage participation in Commonwealth-focused activities.",
+        ],
+    },{
+        title: "Campus Ambassador",
+        company: "BDStudents",
+        location: "Bangladesh",
+        date: "2026 – Present",
+        responsibilities: [
+            "Promote BDStudents programs and events through campus outreach and social media.",
+            "Engage students to increase participation and strengthen community involvement.",
+        ],
+    },{
+        title: "Campus Leader",
+        company: "Unbolt Academy",
+        location: "Bangladesh",
+        date: "2026 – Present",
+        responsibilities: [
+            "Support student leadership and engagement initiatives within the learning community.",
+            "Encourage student participation in educational programs and community activities.",
+        ],
+    },
 ];
 
 export default function Experiences() {
